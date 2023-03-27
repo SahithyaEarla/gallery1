@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+    body{
+        width:100vw;
+        background-color: cornsilk;
+        word-spacing: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        align-items: center;
+    }
+    img{
+        width: 250px;
+        height: 200px;
+        border-radius: 40px;
+        padding-right: 5px;
+        padding-left: 10px;
+        padding-top: 15px;
+        transition: all 0.4s;
+    }
+    img:hover{
+        transform :scale(1.2)
+    }
+   </style>
+</head>
+<body>
+    <div>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img>
+    <img src="../gallery/images/0.jpg">
+    </div>
+    <script>
+        var img=document.images;
+        console.log(img)
+        for(i=0;1<=img.length;i++)
+        {
+            img[i].src=`../gallery/images/${i}.jpg`
+        }
+    </script>
+</body>
+</html>
